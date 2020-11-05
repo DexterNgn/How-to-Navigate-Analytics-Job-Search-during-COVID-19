@@ -1,0 +1,68 @@
+---
+title: "Visualization"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(sqldf)
+library(ggplot2)
+```
+
+## Read the dataset
+```{r}
+data1 = read.csv("Company_Info.csv")
+data2 = read.csv("Job_Data.csv")
+```
+
+```{r}
+head(data)
+```
+
+## Visualization
+
+## 1. By 2020Q2 Revenue
+```{r}
+newdata = sqldf("
+SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Revenue_2020Q2
+FROM data1
+LEFT JOIN data2
+ON data1.Company_Name = data2.Company_Name
+")
+```
+
+```{r}
+head(newdata)
+```
+
+```{r}
+ggplot(newdata, aes(x=reorder(Company_Name, Revenue_2020Q2), y = Revenue_2020Q2, fill=Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() +  labs(title="2020Q2 Revenue by Company", x="Company", y="Revenue in 2020-Q2 (USD million)") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+```
+
+## 2. By Revenue Growth
+
+```{r}
+newdata = sqldf("
+SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Revenue_Growth
+FROM data1
+LEFT JOIN data2
+ON data1.Company_Name = data2.Company_Name
+")
+```
+
+```{r}
+head(newdata)
+```
+
+```{r}
+ggplot(newdata, aes(x=reorder(Company_Name, Revenue_Growth), y = Revenue_Growth, fill = Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() +  labs(title="2020Q2 Revenue Growth by Company", x="Company", y="Revenue Growth (%)") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+```

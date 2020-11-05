@@ -1,0 +1,230 @@
+---
+title: "Visualization"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(sqldf)
+library(ggplot2)
+library(ggpubr)
+```
+
+## Read the dataset
+```{r}
+data = read.csv("Job_Data.csv")
+```
+
+```{r}
+head(data)
+```
+
+## Visualization
+
+## 1. By Job_Title
+
+## Analyst/Engineer level and Scientist/Reseacher level
+
+```{r}
+newdata = sqldf("
+SELECT Job_Title, COUNT(*) AS Count
+FROM data
+WHERE Title_Level = 'Analyst/Engineer Level'
+GROUP BY Job_Title
+")
+```
+
+```{r}
+newdata3 = sqldf("
+SELECT Job_Title, COUNT(*) AS Count
+FROM data
+WHERE Title_Level = 'Scientist/Reseacher Level'
+GROUP BY Job_Title
+")
+```
+
+```{r}
+Sortnewdata <- newdata[order(newdata$Count, decreasing = TRUE),]
+top10Sortnewdata <- head(Sortnewdata, n = 10)
+top10Sortnewdata
+```
+
+```{r}
+Sortnewdata3 <- newdata3[order(newdata3$Count, decreasing = TRUE),]
+top10Sortnewdata3 <- head(Sortnewdata3, n = 10)
+top10Sortnewdata3
+```
+
+
+```{r}
+g1 <- ggplot(top10Sortnewdata, aes(x=reorder(Job_Title, Count), y=Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Analyst/Engineer Jobs", x="Job Title") +
+  theme(plot.title=element_text(hjust=0.5, size = 13), axis.title.y = element_blank())
+
+g3 <- ggplot(top10Sortnewdata3, aes(x=reorder(Job_Title, Count), y=Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Scientist/Reseacher Jobs", x="Job Title") +
+  theme(plot.title=element_text(hjust=0.5, size = 13), axis.title.y = element_blank())
+
+ggarrange(g1, g3, ncol=2, nrow=1)
+```
+
+```{r}
+```
+
+## Manager level
+```{r}
+newdata2 = sqldf("
+SELECT Job_Title, COUNT(*) AS Count
+FROM data
+WHERE Title_Level = 'Manager Level'
+GROUP BY Job_Title
+")
+```
+
+```{r}
+Sortnewdata2 <- newdata2[order(newdata2$Count, decreasing = TRUE),]
+top10Sortnewdata2 <- head(Sortnewdata2, n = 10)
+top10Sortnewdata2
+```
+
+```{r}
+ggplot(top10Sortnewdata2, aes(x=reorder(Job_Title, Count), y=Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Jobs for Manager Level", x="Job Title") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+```
+
+## 2. By Industry
+```{r}
+newdata4 = sqldf("
+SELECT Industry, COUNT(*) AS Count
+FROM data
+GROUP BY Industry
+")
+```
+
+```{r}
+ggplot(newdata4, aes(x=reorder(Industry, Count), y=Count, fill=Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() + labs(title="Jobs by Industry", x="Industry") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank(),legend.position="none")
+```
+
+## 3. By Industry * Company
+```{r}
+newdata6 = sqldf("
+SELECT Industry, Company_Name, COUNT(*) AS Count
+FROM data
+GROUP BY Industry, Company_Name
+")
+```
+
+```{r}
+ggplot(newdata6, aes(x=reorder(Company_Name, Count), y=Count, fill = Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() + labs(title="Jobs by Industry vs Company", x="Company") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+```
+
+## 4. By Amazon, CSV Health, JPMorgan Chase * Job
+```{r}
+newdata7 = sqldf("
+SELECT Job_Title, COUNT(*) AS Count
+FROM data
+WHERE Company_Name = 'Amazon' AND Title_Level = 'Analyst/Engineer Level'
+GROUP BY Job_Title")
+
+newdata8 = sqldf("
+SELECT Job_Title, COUNT(*) AS Count
+FROM data
+WHERE Company_Name = 'CVS Health' AND Title_Level = 'Analyst/Engineer Level'AND Job_Title NOT LIKE 'Senior Analyst'
+GROUP BY Job_Title")
+
+newdata9 = sqldf("
+SELECT Job_Title, COUNT(*) AS Count
+FROM data
+WHERE Company_Name = 'JPMorgan Chase Co.' AND Title_Level = 'Analyst/Engineer Level'
+GROUP BY Job_Title")
+
+newdata10 = sqldf("
+SELECT Job_Title, COUNT(*) AS Count
+FROM data
+WHERE Company_Name = 'The Home Depot' AND Title_Level = 'Analyst/Engineer Level' AND Job_Title NOT LIKE 'Senior Analyst'
+GROUP BY Job_Title")
+```
+
+```{r}
+g7 <- ggplot(newdata7, aes(x=reorder(Job_Title, Count), y=Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Amazon", x="Job Title") +
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+
+g8 <- ggplot(newdata8, aes(x=reorder(Job_Title, Count), y=Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="CVS Health", x="Job Title") +
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+
+g9 <- ggplot(newdata9, aes(x=reorder(Job_Title, Count), y=Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="JPMorgan Chase Co.", x="Job Title") +
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+
+g10 <- ggplot(newdata10, aes(x=reorder(Job_Title, Count), y=Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="The Home Depot", x="Job Title") +
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+
+ggarrange(g7, g8, g9, g10, ncol=2, nrow=2)
+```
+
+## 5. Jobs by Time
+```{r}
+data11 <- data
+data11$Date <- as.Date(data$Date,"%m/%d/%Y")
+data12 <- data11[data11$Date >= '2020-09-14',]
+```
+
+```{r}
+head(data11)
+head(data12)
+```
+
+```{r}
+newdata11 = sqldf("
+SELECT Date, COUNT(*) AS Job_Count
+FROM data11
+GROUP BY Date
+")
+```
+
+```{r}
+newdata12 = sqldf("
+SELECT Date, COUNT(*) AS Job_Count
+FROM data12
+GROUP BY Date
+")
+```
+
+```{r}
+head(newdata11)
+head(newdata12)
+```
+
+```{r}
+g11 <- ggplot(data=newdata11, aes(x=Date, y=Job_Count, group=1)) +
+  geom_line(color="red")+
+  geom_point()
+g11
+```
+
+```{r}
+g12 <- ggplot(data=newdata12, aes(x=Date, y=Job_Count, group=1)) +
+  geom_line(color="red")+
+  geom_point()
+g12
+```

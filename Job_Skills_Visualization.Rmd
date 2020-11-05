@@ -1,0 +1,201 @@
+---
+title: "Visualization"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(sqldf)
+library(ggplot2)
+library(tidyverse)
+library(readr)
+library(Hmisc)
+library(ggpubr)
+library(MASS)
+library(scales)
+library(lubridate)
+library(dataQualityR)
+library(corrplot)
+library(ggplot2)
+library(ggpubr)
+library(ggcorrplot)
+```
+
+## Read the dataset
+```{r}
+data_1<-read.csv("Job_Skills.csv")
+data_1
+data_2<-read.csv("Job_Skills_For_Graphing.csv")
+data_2
+data_3<-read.csv("Job_Skills_For_Graphing (Transposed).csv")
+data_3
+```
+
+## 1. Which skills are most demanded?
+
+## Overall
+
+```{r}
+newdata1 = sqldf("
+SELECT *
+FROM data_3
+WHERE Job_Title NOT IN ('twoyears_we') 
+")
+newdata1
+```
+
+```{r}
+g1 <- ggplot(newdata1, aes(x=reorder(Job_Title, Total_Count), y=Total_Count)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Top Skills Demanded", y="Total Count") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank(),legend.position="none")
+g1
+```
+
+## By Job Title
+
+```{r}
+newdata2 = sqldf("
+SELECT *
+FROM data_3
+WHERE Job_Title NOT IN ('twoyears_we','Communication_Presentation','Attention_to_detail','Critical_Thinking', 'Problem_Solving') 
+")
+newdata2
+```
+
+
+```{r}
+g2 <- ggplot(newdata2, aes(x=reorder(Job_Title, Financial.Analyst), y=Financial.Analyst)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Skills for Financial Analyst", y="Total Count") +
+  theme(plot.title=element_text(hjust=0.5, size = 10), axis.title.y = element_blank())
+
+g6 <- ggplot(newdata2, aes(x=reorder(Job_Title, Business.Analyst), y=Business.Analyst)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Skills for Business Analyst", y="Total Count") +
+  theme(plot.title=element_text(hjust=0.5, size = 10), axis.title.y = element_blank())
+
+ggarrange(g2, g6, ncol=2, nrow=1)
+```
+
+```{r}
+g3 <- ggplot(newdata2, aes(x=reorder(Job_Title, Data.Engineer), y=Data.Engineer)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Skills for Data Engineer", y="Total Count") +
+  theme(plot.title=element_text(hjust=0.5, size = 10), axis.title.y = element_blank())
+
+g4 <- ggplot(newdata2, aes(x=reorder(Job_Title, Data.Analyst), y=Data.Analyst)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Skills for Data Analyst", y="Total Count") +
+  theme(plot.title=element_text(hjust=0.5, size = 10), axis.title.y = element_blank())
+
+ggarrange(g3, g4, ncol=2, nrow=1)
+```
+
+```{r}
+g5 <- ggplot(newdata2, aes(x=reorder(Job_Title, Data.Scientist), y=Data.Scientist)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Skills for Data Scientist", y="Total Count") +
+  theme(plot.title=element_text(hjust=0.5, size = 10), axis.title.y = element_blank())
+
+g7 <- ggplot(newdata2, aes(x=reorder(Job_Title, Data.Researcher), y=Data.Researcher)) +     
+geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() + labs(title="Skills for Data Researcher", y="Total Count") +
+  theme(plot.title=element_text(hjust=0.5, size = 10), axis.title.y = element_blank())
+
+ggarrange(g5, g7, ncol=2, nrow=1)
+```
+
+## 2. Which jobs are most popular for each skill?
+
+```{r}
+newdata3 = sqldf("
+SELECT *
+FROM data_2
+WHERE Job_Title NOT IN ('Grand Total') 
+")
+newdata3
+```
+
+```{r}
+gg8 <- ggplot(newdata3, aes(x=Microsoft_Office.Excel_Macro_VBA., y = reorder(Job_Title,Microsoft_Office.Excel_Macro_VBA.))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="MS, Excel, Macro, VBA.") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gg9<-ggplot(newdata3, aes(x=SQL, y = reorder(Job_Title,SQL))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="SQL") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gg10<-ggplot(newdata3, aes(x=SAS, y = reorder(Job_Title,SAS))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="SAS") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gg11<-ggplot(newdata3, aes(x=PowerBI, y = reorder(Job_Title,PowerBI))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="PowerBI") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+ggarrange(gg8, gg9, gg10, gg11, ncol=2, nrow=2)
+```
+
+```{r}
+gg12<-ggplot(newdata3, aes(x=R, y = reorder(Job_Title,R))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="R") +
+   theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gg15<-ggplot(newdata3, aes(x=Python, y = reorder(Job_Title,Python))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Python") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gg13<-ggplot(newdata3, aes(x=Tableau, y = reorder(Job_Title,Tableau))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Tableau") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gg14<-ggplot(newdata3, aes(x=AWS, y = reorder(Job_Title,AWS))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="AWS") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+ggarrange(gg12, gg15, gg13, gg14, ncol=2, nrow=2)
+```
+
+#2. General skills
+```{R}
+gl1<-ggplot(newdata3, aes(x=Data_Modeling, y = reorder(Job_Title,Data_Modeling))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Data_Modeling") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gl2<-ggplot(newdata3, aes(x=Machine_Learning, y = reorder(Job_Title,Machine_Learning))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Machine_Learning") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gl3<-ggplot(newdata3, aes(x=Data_Visualization, y = reorder(Job_Title,Data_Visualization))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Data_Visualization") +
+   theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5, size =8), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+ggarrange(gl1, gl2, gl3, ncol=2, nrow=2)
+```
+#3. soft skills
+```{r}
+gs1<-ggplot(newdata3, aes(x=Critical_Thinking, y = reorder(Job_Title,Critical_Thinking))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Critical Thinking") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gs2<-ggplot(newdata3, aes(x=Communication_Presentation, y = reorder(Job_Title,Communication_Presentation))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Communication Presentation") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gs3<-ggplot(newdata3, aes(x=Attention_to_detail, y = reorder(Job_Title,Attention_to_detail))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Attention to detail") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+gs4<-ggplot(newdata3, aes(x=Problem_Solving, y = reorder(Job_Title,Problem_Solving))) +     geom_bar(stat = "identity", fill="steelblue") +
+  coord_flip() +  labs(title="Problem Solving") +
+  theme(plot.title=element_text(hjust=0.5, size = 10))+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5), axis.title.x = element_blank(), axis.title.y = element_blank())
+
+ggarrange(gs1, gs2, gs3, gs4, ncol=2, nrow=2)
+```
+
+
+

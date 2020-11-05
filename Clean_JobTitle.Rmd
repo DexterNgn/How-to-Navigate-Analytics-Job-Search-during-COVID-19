@@ -1,0 +1,155 @@
+---
+title: "Clean JobTitle"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+data = read.csv("Job_Titles.csv")
+```
+
+```{r}
+head(data)
+```
+
+```{r}
+library(sqldf)
+```
+
+```{r}
+sqldf("
+      select * 
+      from data 
+      LIMIT 10
+      ")
+```
+
+```{r}
+Newdata = sqldf("
+      select *,
+             CASE WHEN Job_Title like '%Business Intelligence Engineer%' OR Job_Title like '%BI Engineer%' OR Job_Title like '%BIE%' THEN 'Business Intelligence Engineer'
+             WHEN Job_Title like '%Supply Chain%' AND Job_Title like '%Analyst%' THEN 'Supply Chain Analyst'
+             WHEN Job_Title like '%Data Analyst%' THEN 'Data Analyst'
+             WHEN Job_Title like '%Data%' AND Job_Title like '%Analyst%' THEN 'Data Analyst'
+             WHEN Job_Title like '%Data Scientist%' THEN 'Data Scientist'
+             WHEN Job_Title like '%Financial Analyst%' THEN 'Financial Analyst'
+             WHEN Job_Title like '%Finance Analyst%' THEN 'Financial Analyst' 
+             WHEN Job_Title like '%Finance%' AND Job_Title like '%Analyst%' THEN 'Financial Analyst' 
+             WHEN Job_Title like '%Pricing%' AND Job_Title like '%Analyst%' THEN 'Pricing Analyst' 
+             WHEN Job_Title like '%Economics Analyst%' THEN 'Economics Analyst' 
+             WHEN Job_Title like '%Financial Accounting Analyst%' THEN 'Financial Accounting Analyst' 
+             WHEN Job_Title like '%Business Analyst%' THEN 'Business Analyst'
+             WHEN Job_Title like '%Business Systems Analyst%' THEN 'Business Systems Analyst'
+             WHEN Job_Title like '%Business%' AND Job_Title like '%Analyst%' THEN 'Business Analyst'
+             WHEN Job_Title like '%Internal Audit%' THEN 'Internal Auditor'
+             WHEN Job_Title like '%Technology Auditor%' THEN ' Technology Auditor'
+             WHEN Job_Title like '%Investment%' AND Job_Title like '%Analyst%' THEN 'Investment Analyst'
+             WHEN Job_Title like '%Credit Analyst%' THEN 'Credit Analyst'
+             WHEN Job_Title like '%Wealth Analyst%' THEN 'Wealth Analyst'
+             WHEN Job_Title like '%Reporting Associate%' THEN 'Reporting Associate'
+             WHEN Job_Title like '%Fulfillment Associate%' THEN 'Fulfillment Associate'
+             WHEN Job_Title like '%Associate%' AND Job_Title like '%Marketing%' THEN 'Marketing Associate'
+             WHEN Job_Title like '%Strategy%' AND Job_Title like '%Associate%' THEN 'Strategy Associate'
+             WHEN Job_Title like '%Data Science%' AND Job_Title like '%Associate%' THEN 'Data Science Associate'
+             WHEN Job_Title like '%Reporting%' AND  Job_Title like '%Analyst%' THEN 'Reporting Analyst'
+             WHEN Job_Title like '%Business Operations Analyst%' THEN 'Business Operations Analyst'
+             WHEN Job_Title like '%Business Process Analyst%' THEN 'Business Process Analyst'
+             WHEN Job_Title like '%Operations Analyst%' OR  Job_Title like '%Ops Analyst%' THEN 'Operations Analyst'
+             WHEN Job_Title like '%Operations%' AND  Job_Title like '%Analyst%' THEN 'Operations Analyst'
+             WHEN Job_Title like '%Forecasting Analyst%' THEN 'Forecasting Analyst'
+             WHEN Job_Title like '%Inventory%' AND Job_Title like '%Analyst%' THEN 'Inventory Analyst'
+             WHEN Job_Title like '%Quality%' AND Job_Title like '%Analyst%' THEN 'Quality Analyst'
+             WHEN Job_Title like '%Logistics Analyst%' THEN 'Logistics Analyst'
+             WHEN Job_Title like '%Sourcing Analyst%' THEN 'Sourcing Analyst'
+             WHEN Job_Title like '%Supplier%' AND Job_Title like '%Analyst%' THEN 'Sourcing Analyst'
+             WHEN Job_Title like '%Vendor%' AND Job_Title like '%Analyst%' THEN 'Sourcing Analyst'
+             WHEN Job_Title like '%Market Researcher%' THEN 'Market Researcher'
+             WHEN Job_Title like '%Marketing%' AND Job_Title like '%Analyst%' THEN 'Marketing Analyst'
+             WHEN Job_Title like '%Client Analyst%' THEN 'Client Analyst'
+             WHEN Job_Title like '%Product Analyst%' or Job_Title like '%Product Analytics%' THEN 'Product Analyst'
+             WHEN Job_Title like '%Services Analyst%' THEN 'Services Analyst'
+             WHEN Job_Title like '%Security%' AND Job_Title like '%Analyst%' THEN 'Security Analyst'
+             WHEN Job_Title like '%Data Management Analyst%' THEN 'Data Management Analyst'
+             WHEN Job_Title like '%Data Execution Analyst%' THEN 'Data Execution Analyst'
+             WHEN Job_Title like '%Quant%' AND Job_Title LIKE '%Analyst%' THEN 'Quantitative Analyst'
+             WHEN Job_Title like '%Quantitative%' AND Job_Title LIKE '%Researcher%' THEN 'Quantitative Researcher'
+             WHEN Job_Title like '%Quanlitative%' AND Job_Title LIKE '%Researcher%' THEN 'Quanlitative Researcher'
+             WHEN Job_Title like '%Data Engineer%' THEN 'Data Engineer'
+             WHEN Job_Title like '%Marketing Data Scientist%' THEN 'Marketing Data Scientist'  
+             WHEN Job_Title like '%Research Scientist%' THEN 'Research Scientist'  
+             WHEN Job_Title like '%Applied Scientist%' THEN 'Applied Scientist'  
+             WHEN Job_Title like '%AI Scientist%' THEN 'AI Scientist'   
+             WHEN Job_Title like '%Research Analyst%' THEN 'Research Analyst'             
+             WHEN Job_Title like '%Machine Learning Engineer%' THEN 'Machine Learning Engineer'             
+             WHEN Job_Title like '%Strategy%' AND Job_Title LIKE '%Analyst%' THEN 'Strategy Analyst'
+             WHEN Job_Title like '%Analytics Consultant%' THEN 'Analytics Consultant'             
+             WHEN Job_Title like '%Technical Consultant%' THEN 'Technical Consultant'             
+             WHEN Job_Title like '%Analytics%' AND Job_Title LIKE '%Consultant%' THEN 'Analytics Consultant'
+             WHEN Job_Title like '%Data%' AND Job_Title LIKE '%Consultant%' THEN 'Data Consultant'
+             WHEN Job_Title like '%Analytics%' AND Job_Title like '%Manager%' THEN 'Analytics Manager'
+             WHEN Job_Title like '%Machine Learning%' AND Job_Title like '%Manager%' THEN 'Machine Learning Manager'
+             WHEN Job_Title like '%Business Intelligence%' AND Job_Title like '%Manager%' THEN 'Business Intelligence Manager'
+             WHEN Job_Title like '%Data Engineer%' AND Job_Title like '%Manager%' THEN 'Data Engineer Manager'
+             WHEN Job_Title like '%Data Engineering%' AND Job_Title like '%Manager%' THEN 'Data Engineer Manager'
+             WHEN Job_Title like '%Technical Program Manager%' THEN 'Technical Program Manager'
+             WHEN Job_Title like '%Scientist Manager%' THEN 'Scientist Manager'
+             WHEN Job_Title like '%Data Science%' AND Job_Title like '%Manager%' THEN 'Data Science Manager'
+             WHEN Job_Title like '%Analytics%' AND Job_Title like  '%Lead%' THEN 'Analytics Lead'
+             WHEN Job_Title like '%Advisor%' AND Job_Title like '%Analytics%' THEN 'Analytics Advisor'
+             WHEN Job_Title like '%Researcher%' THEN 'Researcher'    
+             WHEN Job_Title like '%Economist%' THEN 'Economist'    
+             WHEN Job_Title like '%Senior Analyst%' THEN 'Senior Analyst'
+             WHEN Job_Title like '%Analyst%' THEN 'Other Analysts'
+             WHEN Job_Title like '%Scientist%' THEN 'Other Scientists'
+             WHEN Job_Title like '%Software%' AND Job_Title like '%Engineer%' THEN 'Software Engineer'
+             WHEN Job_Title like '%Auditor%' THEN 'Other Auditor level'
+             WHEN Job_Title like '%Audit%' AND Job_Title like '%Manager%' THEN 'Audit Manager'
+             WHEN Job_Title like '%Program Manager%' THEN 'Program Manager'
+             WHEN Job_Title like '%Strategy Manager%' THEN 'Strategy Manager'
+             WHEN Job_Title like '%Supply Chain%' AND Job_Title like '%Manager%' THEN 'Supply Chain Manager'
+             WHEN Job_Title like '%Business Operations Manager%' THEN 'Business Operations Manager'
+             WHEN Job_Title like '%Finance Operations Manager%' THEN 'Finance Operations Manager'
+             WHEN Job_Title like '%Marketing Operations Manager%' THEN 'Marketing Operations Manager'
+             WHEN Job_Title like '%Operations Manager%' THEN 'Operations Manager'
+             WHEN Job_Title like '%Finance Manager%' THEN 'Finance Manager'
+             WHEN Job_Title like '%Product Manager%' THEN 'Product Manager'
+             WHEN Job_Title like '%Marketing Manager%' THEN 'Marketing Manager'
+             WHEN Job_Title like '%Manager%' THEN 'Other Manager level'
+             WHEN Job_Title like '%Consultant%' THEN 'Other Consultant level'
+             WHEN Job_Title like '%Associate%' THEN 'Other Associate level'
+             WHEN Job_Title like '%Engineer%' THEN 'Other Engineer level'
+             WHEN Job_Title like '%Developer%' THEN 'Other Developer level'
+             WHEN Job_Title like '%Architect%' THEN 'Other Architect level'
+             ELSE 'Unknown'
+             END AS New_JobTitle
+      from data
+      ")
+```
+
+```{r}
+Newdata1 = sqldf("
+      SELECT *,
+             CASE WHEN New_JobTitle LIKE '%Analyst%' OR New_JobTitle LIKE '%Engineer%' THEN 'Analyst/Engineer Level' 
+             WHEN New_JobTitle LIKE '%Associate%' THEN 'Associate Level'
+             WHEN New_JobTitle LIKE '%Scientist%' OR New_JobTitle LIKE '%Researcher%' THEN 'Scientist/Reseacher Level'
+             WHEN New_JobTitle LIKE '%Consultant%' THEN 'Consultant Level' 
+             WHEN New_JobTitle LIKE '%Lead%' OR New_JobTitle LIKE '%Advisor%' OR New_JobTitle LIKE '%Economist%' THEN 'Lead/Advisor Level' 
+             WHEN New_JobTitle LIKE '%Auditor%' THEN 'Audit Level'
+             WHEN New_JobTitle LIKE '%Developer%' OR New_JobTitle LIKE '%Architect%' THEN 'Developer/Architect Level' 
+             WHEN New_JobTitle LIKE '%Manager%' THEN 'Manager Level' 
+             ELSE 'Unknown'
+             END AS Job_Level
+      FROM Newdata
+")      
+```
+
+```{r}
+Newdata1
+```
+
+```{r}
+write.csv(Newdata1,"Cleaned_Job_Titles.csv", row.names = FALSE)
+```

@@ -1,0 +1,69 @@
+---
+title: "Visualization"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(sqldf)
+library(ggplot2)
+```
+
+## Read the dataset
+```{r}
+data1 = read.csv("Company_Workforce.csv")
+data2 = read.csv("Job_Data.csv")
+```
+
+```{r}
+head(data1)
+head(data2)
+```
+
+## Visualization
+
+## 1. By Number of Employee
+```{r}
+newdata = sqldf("
+SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Num_of_Employee/1000 AS Number_of_Employee
+FROM data1
+LEFT JOIN data2
+ON data1.Company_Name = data2.Company_Name
+")
+```
+
+```{r}
+head(newdata)
+```
+
+```{r}
+ggplot(newdata, aes(x=reorder(Company_Name, Number_of_Employee), y = Number_of_Employee, fill = Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() +  labs(title="Number of Employee by Company and Industry", x="Company", y="Number of Employee (Thousand)") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+```
+
+## 2. By Hiring Growth
+
+```{r}
+newdata2 = sqldf("
+SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Hiring_Growth_2020
+FROM data1
+LEFT JOIN data2
+ON data1.Company_Name = data2.Company_Name
+")
+```
+
+```{r}
+head(newdata2)
+```
+
+```{r}
+ggplot(newdata2, aes(x=reorder(Company_Name, Hiring_Growth_2020), y = Hiring_Growth_2020, fill = Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() +  labs(title="2020 Hiring Growth by Company and Industry", x="Company", y="Hiring Growth (%)") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+```
