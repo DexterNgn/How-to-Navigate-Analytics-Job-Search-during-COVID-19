@@ -1,2 +1,3 @@
 # How-to-Navigate-Analytics-Job-Search-during-COVID-19
-# This is a project my team did for the Fuqa Data Competition 2020
+# This is my team's project for the Fuqa Data Competition 2020
+
