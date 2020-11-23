@@ -1,0 +1,298 @@
+Company_Name,Job_Title,PowerBI,Critical_Thinking,Communication_Presentation,Attention_to_detail,Problem_Solving,Microsoft_Office(Excel_Macro_VBA),SQL,SAS,Python,Java,R,MATLAB,TensorFlow,Tableau,Alteryx,Data_Modeling,Machine_Learning,Data_Visualization,Oracle,SAP,AWS,Spark,Linux,C++,Hadoop,Visio,twoyears_we
+Amazon,Data Analyst,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Amazon,Business Analyst,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,1
+Amazon,Data Engineer,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,0,1,1,1,0,1,0,1
+Amazon,Financial Analyst,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Amazon,Supply Chain Analyst,1,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amazon,Operation Analyst,1,0,1,0,1,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Amazon,Strategy Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1
+Amazon, Tax Audit Analytics,0,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1
+Amazon,Marketing Analyst,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+Amazon,Analytics Manager,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Amazon,Data Scientist,0,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1
+AT&T,Data Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+AT&T,Data Engineer,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,1
+AT&T,Financial Analyst,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+AT&T,Logistics Analyst,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AT&T,Strategy Analyst,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+AT&T,Marketing Analyst,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1
+AT&T,Analytics Manager,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+Bank of America,Business Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Bank of America,Data Scientist,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Bank of America,Data Analyst,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,1,0,0,0,1
+Bank of America,Financial Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Bank of America,Strategy Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Bank of America,Audit Analytics,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+Bank of America,Analytics Manager,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Bank of America,Data Researcher,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1
+JPMorgan Chase Co.,Business Analyst,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+JPMorgan Chase Co.,Data Scientist,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+JPMorgan Chase Co.,Data Analyst,0,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+JPMorgan Chase Co.,Data Engineer,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,0,1,1,1,0,1,0,1
+JPMorgan Chase Co.,Financial Analyst,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+JPMorgan Chase Co.,Supply Chain Analyst,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+JPMorgan Chase Co.,Operation Analyst,0,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+JPMorgan Chase Co.,Strategy Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+JPMorgan Chase Co.,Analytics Consultant,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+JPMorgan Chase Co.,Audit Analytics,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+JPMorgan Chase Co.,Marketing Analyst,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+JPMorgan Chase Co.,Analytics Manager,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,1
+JPMorgan Chase Co.,Data Researcher,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,1
+Wells Fargo,Business Analyst,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+Wells Fargo,Data Engineer,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Wells Fargo,Operation Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Wells Fargo,Strategy Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Wells Fargo,Analytics Consultant,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+Wells Fargo,Audit Analytics,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Wells Fargo,Data Researcher,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Truist,Business Analyst,0,0,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Truist,Data Scientist,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Truist,Data Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+Truist,Data Engineer,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+Truist,Operation Analyst,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Truist,Analytics Consultant,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Truist,Marketing Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Truist,Analytics Manager,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Truist,Data Researcher,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+Capital One,Business Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Capital One,Data Scientist,0,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0
+Capital One,Data Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Capital One,Data Engineer,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+Capital One,Operation Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Capital One,Audit Analytics,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Capital One,Marketing Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Capital One,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Goldman Sachs,Business Analyst,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Goldman Sachs,Data Scientist,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Goldman Sachs,Data Analyst,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+Goldman Sachs,Financial Analyst,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+Goldman Sachs,Supply Chain Analyst,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Goldman Sachs,Strategy Analyst,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Goldman Sachs,Analytics Consultant,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Goldman Sachs,Marketing Analyst,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+Goldman Sachs,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Morgan Stanley,Business Analyst,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Morgan Stanley,Data Analyst,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,0,1,1,1,0,1,0,1
+Morgan Stanley,Data Engineer,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Morgan Stanley,Financial Analyst,1,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Morgan Stanley,Supply Chain Analyst,1,0,1,0,0,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Morgan Stanley,Operation Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1
+Morgan Stanley,Audit Analytics,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+Morgan Stanley,Marketing Analyst,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Morgan Stanley,Analytics Manager,0,0,1,0,1,0,1,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1
+Morgan Stanley,Data Researcher,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Nike,Business Analyst,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,1
+Nike,Data Scientist,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Nike,Data Analyst,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nike,Data Engineer,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Nike,Financial Analyst,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1
+Nike,Supply Chain Analyst,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+Nike,Operation Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Nike,Strategy Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Nike,Analytics Consultant,0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,1,0,0,0,1
+Nike,Audit Analytics,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Nike,Marketing Analyst,0,1,1,0,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Nike,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+Nike,Data Researcher,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+PepsiCo,Data Scientist,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1
+PepsiCo,Data Engineer,1,0,1,1,1,1,0,0,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+PepsiCo,Financial Analyst,0,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+PepsiCo,Supply Chain Analyst,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,0,1,1,1,0,1,0,1
+PepsiCo,Operation Analyst,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PepsiCo,Strategy Analyst,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+PepsiCo,Analytics Consultant,0,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+PepsiCo,Audit Analytics,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+PepsiCo,Marketing Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+PepsiCo,Analytics Manager,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+PepsiCo,Data Researcher,1,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+Johnson & Johnson,Business Analyst,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,1
+Johnson & Johnson,Data Scientist,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0
+Johnson & Johnson,Data Analyst,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+Johnson & Johnson,Data Engineer,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Johnson & Johnson,Financial Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Johnson & Johnson,Supply Chain Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Johnson & Johnson,Operation Analyst,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+Johnson & Johnson,Marketing Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Johnson & Johnson,Analytics Manager,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1
+Johnson & Johnson,Data Researcher,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+Unilever,Business Analyst,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unilever,Data Scientist,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Unilever,Financial Analyst,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0
+Unilever,Operation Analyst,0,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0
+Unilever,Strategy Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Unilever,Analytics Consultant,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+Unilever,Audit Analytics,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unilever,Marketing Analyst,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Unilever,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Unilever,Data Researcher,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+The Walt Disney Company,Business Analyst,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+The Walt Disney Company,Data Scientist,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+The Walt Disney Company,Data Analyst,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+The Walt Disney Company,Data Engineer,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+The Walt Disney Company,Financial Analyst,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+The Walt Disney Company,Supply Chain Analyst,0,1,1,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1
+The Walt Disney Company,Operation Analyst,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+The Walt Disney Company,Strategy Analyst,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+The Walt Disney Company,Analytics Consultant,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+The Walt Disney Company,Marketing Analyst,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+The Walt Disney Company,Analytics Manager,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1
+The Walt Disney Company,Data Researcher,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+Sony,Business Analyst,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Sony,Data Scientist,0,1,1,1,1,0,1,0,1,0,1,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1
+Sony,Data Engineer,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0
+Sony,Supply Chain Analyst,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Sony,Operation Analyst,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,0,0
+Sony,Strategy Analyst,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+Sony,Audit Analytics,0,1,1,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1
+Sony,Marketing Analyst,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Sony,Analytics Manager,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+Sony,Data Researcher,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Omnicom Media Group,Business Analyst,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Omnicom Media Group,Data Scientist,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+Omnicom Media Group,Data Analyst,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+Omnicom Media Group,Data Engineer,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Omnicom Media Group,Financial Analyst,0,0,1,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1
+Omnicom Media Group,Supply Chain Analyst,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Omnicom Media Group,Operation Analyst,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+Omnicom Media Group,Strategy Analyst,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Omnicom Media Group,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Omnicom Media Group,Data Researcher,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+WarnerMedia,Business Analyst,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+WarnerMedia,Data Scientist,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+WarnerMedia,Data Engineer,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+WarnerMedia,Financial Analyst,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0
+WarnerMedia,Supply Chain Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+WarnerMedia,Strategy Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+WarnerMedia,Analytics Consultant,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+WarnerMedia,Audit Analytics,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+WarnerMedia,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+WarnerMedia,Data Researcher,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+CVS Health,Business Analyst,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+CVS Health,Data Scientist,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0
+CVS Health,Financial Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+CVS Health,Supply Chain Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CVS Health,Operation Analyst,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+CVS Health,Strategy Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+CVS Health,Analytics Manager,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+IBM,Business Analyst,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0
+IBM,Data Scientist,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+IBM,Data Analyst,0,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0
+IBM,Data Engineer,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+IBM,Financial Analyst,0,0,1,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1
+IBM,Operation Analyst,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+IBM,Strategy Analyst,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+IBM,Analytics Consultant,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+IBM,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+IBM,Data Researcher,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+The Home Depot,Data Scientist,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+The Home Depot,Data Analyst,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+The Home Depot,Financial Analyst,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0
+The Home Depot,Operation Analyst,0,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0
+The Home Depot,Strategy Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+The Home Depot,Analytics Consultant,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+The Home Depot,Audit Analytics,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+The Home Depot,Marketing Analyst,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+The Home Depot,Analytics Manager,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+The Home Depot,Data Researcher,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+Target,Business Analyst,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Target,Data Scientist,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Target,Data Analyst,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+Target,Data Engineer,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+Target,Supply Chain Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Target,Operation Analyst,0,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0
+Target,Strategy Analyst,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Target,Audit Analytics,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Target,Marketing Analyst,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Target,Data Researcher,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+"Lowe's Companies, Inc.",Business Analyst,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+"Lowe's Companies, Inc.",Data Scientist,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0
+"Lowe's Companies, Inc.",Data Engineer,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+"Lowe's Companies, Inc.",Financial Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+"Lowe's Companies, Inc.",Supply Chain Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Lowe's Companies, Inc.",Operation Analyst,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+"Lowe's Companies, Inc.",Strategy Analyst,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+"Lowe's Companies, Inc.",Marketing Analyst,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+"Lowe's Companies, Inc.",Analytics Manager,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+"Lowe's Companies, Inc.",Data Researcher,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+Oracle,Business Analyst,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Oracle,Data Scientist,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+Oracle,Data Analyst,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+Oracle,Data Engineer,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Oracle,Financial Analyst,0,0,1,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1
+Oracle,Supply Chain Analyst,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Oracle,Operation Analyst,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+Oracle,Analytics Consultant,0,1,1,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1
+Oracle,Audit Analytics,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Oracle,Marketing Analyst,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+Oracle,Analytics Manager,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Facebook,Business Analyst,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+Facebook,Data Analyst,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Facebook,Data Engineer,0,0,1,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1
+Facebook,Financial Analyst,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Facebook,Supply Chain Analyst,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Facebook,Operation Analyst,0,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+Facebook,Strategy Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Facebook,Analytics Consultant,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Facebook,Marketing Analyst,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+Facebook,Analytics Manager,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1
+Facebook,Data Researcher,0,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1
+PWC,Business Analyst,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+PWC,Data Scientist,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0
+PWC,Data Analyst,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+PWC,Data Engineer,0,1,1,0,1,0,1,0,0,0,0,0,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0
+PWC,Financial Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PWC,Supply Chain Analyst,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PWC,Operation Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+PWC,Analytics Consultant,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+PWC,Audit Analytics,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PWC,Marketing Analyst,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+PWC,Analytics Manager,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1
+PWC,Data Researcher,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
+EY,Business Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+EY,Data Scientist,0,0,1,0,1,0,0,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+EY,Data Engineer,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+EY,Financial Analyst,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+EY,Supply Chain Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+EY,Operation Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EY,Analytics Consultant,0,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+EY,Audit Analytics,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+EY,Marketing Analyst,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+EY,Analytics Manager,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,1
+Deloitte,Business Analyst,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Deloitte,Data Scientist,0,1,1,0,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+Deloitte,Data Engineer,0,1,1,0,1,0,1,1,1,1,1,1,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0
+Deloitte,Financial Analyst,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Deloitte,Supply Chain Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Deloitte,Operation Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Deloitte,Analytics Consultant,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Deloitte,Audit Analytics,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Deloitte,Marketing Analyst,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Deloitte,Analytics Manager,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1
+KPMG,Business Analyst,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KPMG,Data Scientist,0,1,1,0,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+KPMG,Data Engineer,0,1,1,0,1,0,1,1,1,1,1,1,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0
+KPMG,Financial Analyst,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+KPMG,Supply Chain Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+KPMG,Operation Analyst,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+KPMG,Analytics Consultant,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+KPMG,Audit Analytics,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KPMG,Marketing Analyst,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+KPMG,Analytics Manager,0,1,1,1,1,0,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1
+Bain & Company ,Business Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Bain & Company ,Data Engineer,0,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,0,0,0,0,1,0,0,1
+Bain & Company ,Supply Chain Analyst,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0
+Bain & Company ,Operation Analyst,0,0,1,1,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+Bain & Company ,Analytics Consultant,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bain & Company ,Marketing Analyst,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McKinsey,Business Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McKinsey,Data Engineer,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+McKinsey,Supply Chain Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+McKinsey,Operation Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+McKinsey,Analytics Consultant,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+McKinsey,Marketing Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Boston Consulting Group,Business Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Boston Consulting Group,Data Engineer,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+Boston Consulting Group,Supply Chain Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Boston Consulting Group,Operation Analyst,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Boston Consulting Group,Analytics Consultant,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+Boston Consulting Group,Marketing Analyst,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
