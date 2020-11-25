@@ -36,6 +36,7 @@ data <- read.csv("Job_DataSum.csv")
 
 ```{r}
 dim(data)
+summary(data$Location)
 ```
 
 ## Visualization
@@ -172,22 +173,22 @@ GROUP BY Job_Title")
 g7 <- ggplot(newdata7, aes(x=reorder(Job_Title, Count), y=Count)) +     
 geom_bar(stat = "identity", fill="steelblue") +
   coord_flip() +  labs(title="Amazon", x="Job Title") +
-  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=9),axis.title.y = element_blank())
 
 g8 <- ggplot(newdata8, aes(x=reorder(Job_Title, Count), y=Count)) +     
 geom_bar(stat = "identity", fill="steelblue") +
   coord_flip() +  labs(title="CVS Health", x="Job Title") +
-  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=9),axis.title.y = element_blank())
 
 g9 <- ggplot(newdata9, aes(x=reorder(Job_Title, Count), y=Count)) +     
 geom_bar(stat = "identity", fill="steelblue") +
   coord_flip() +  labs(title="JPMorgan Chase Co.", x="Job Title") +
-  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=9),axis.title.y = element_blank())
 
 g10 <- ggplot(newdata10, aes(x=reorder(Job_Title, Count), y=Count)) +     
 geom_bar(stat = "identity", fill="steelblue") +
   coord_flip() +  labs(title="The Home Depot", x="Job Title") +
-  theme(plot.title=element_text(hjust=0.5),text = element_text(size=10),axis.title.y = element_blank())
+  theme(plot.title=element_text(hjust=0.5),text = element_text(size=9),axis.title.y = element_blank())
 
 ggarrange(g7, g8, g9, g10, ncol=2, nrow=2)
 ```

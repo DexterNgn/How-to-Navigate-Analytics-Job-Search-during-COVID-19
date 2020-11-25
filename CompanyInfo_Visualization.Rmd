@@ -70,13 +70,13 @@ head(newdata)
 ```{r}
 gr1 <- ggplot(newdata, aes(x=reorder(Company_Name, Revenue_Growth_Q2), y = Revenue_Growth_Q2, fill = Industry)) +     
 geom_bar(stat = "identity") +
-  coord_flip() +  labs(title="2020Q2 Revenue Growth by Company", x="Company", y="Revenue Growth (%)") +
+  coord_flip() +  labs(title="2020Q2 Revenue Growth", x="Company", y="Revenue Growth (%)") +
   theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
 gr1
 
 gr2 <- ggplot(newdata, aes(x=reorder(Company_Name, Revenue_Growth_Q3), y = Revenue_Growth_Q3, fill = Industry)) +     
 geom_bar(stat = "identity") +
-  coord_flip() +  labs(title="2020Q3 Revenue Growth by Company", x="Company", y="Revenue Growth (%)") +
+  coord_flip() +  labs(title="2020Q3 Revenue Growth", x="Company", y="Revenue Growth (%)") +
   theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
 gr2
 ```
