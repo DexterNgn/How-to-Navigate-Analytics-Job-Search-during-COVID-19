@@ -11,15 +11,31 @@ knitr::opts_chunk$set(echo = TRUE)
 library(sqldf)
 library(ggplot2)
 library(ggpubr)
+
+library(dataQualityR) #for data cleaning
+library(e1071) #SVM Training & Testing Models
+library(mice) #deal with missing data
+library(corrplot) #plot for correlation matrix
+library(ggplot2) #visualization and plots
+library(ggpubr) #customizing ggplot2
+library(scales) #graphical scales map data to aesthetics
+library(caret) #deal with Classification And REgression Training CART
+library(dplyr) #data manipulation: filter and arrange
+library(tidyverse) #data manipulation
+library(sf) #plot mapping
+library(gganimate) #static visualization
+library(MASS) #deal with data set
+library(VIM) #tools for the visualization of missing or imputed values
+library(glmnet) #Lasso and Elastic-Net Regularization
 ```
 
 ## Read the dataset
 ```{r}
-data = read.csv("Job_Data.csv")
+data <- read.csv("Job_DataSum.csv")
 ```
 
 ```{r}
-head(data)
+dim(data)
 ```
 
 ## Visualization
@@ -49,13 +65,11 @@ GROUP BY Job_Title
 ```{r}
 Sortnewdata <- newdata[order(newdata$Count, decreasing = TRUE),]
 top10Sortnewdata <- head(Sortnewdata, n = 10)
-top10Sortnewdata
 ```
 
 ```{r}
 Sortnewdata3 <- newdata3[order(newdata3$Count, decreasing = TRUE),]
 top10Sortnewdata3 <- head(Sortnewdata3, n = 10)
-top10Sortnewdata3
 ```
 
 
@@ -73,9 +87,6 @@ geom_bar(stat = "identity", fill="steelblue") +
 ggarrange(g1, g3, ncol=2, nrow=1)
 ```
 
-```{r}
-```
-
 ## Manager level
 ```{r}
 newdata2 = sqldf("
@@ -89,7 +100,6 @@ GROUP BY Job_Title
 ```{r}
 Sortnewdata2 <- newdata2[order(newdata2$Count, decreasing = TRUE),]
 top10Sortnewdata2 <- head(Sortnewdata2, n = 10)
-top10Sortnewdata2
 ```
 
 ```{r}

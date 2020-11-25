@@ -15,7 +15,7 @@ library(ggplot2)
 ## Read the dataset
 ```{r}
 data1 = read.csv("Company_Info.csv")
-data2 = read.csv("Job_Data.csv")
+data2 = read.csv("Job_DataSum.csv")
 ```
 
 ```{r}
@@ -27,7 +27,7 @@ head(data)
 ## 1. By 2020Q2 Revenue
 ```{r}
 newdata = sqldf("
-SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Revenue_2020Q2
+SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Revenue_2020Q2, data1.Revenue_2020Q3
 FROM data1
 LEFT JOIN data2
 ON data1.Company_Name = data2.Company_Name
@@ -39,17 +39,24 @@ head(newdata)
 ```
 
 ```{r}
-ggplot(newdata, aes(x=reorder(Company_Name, Revenue_2020Q2), y = Revenue_2020Q2, fill=Industry)) +     
+rev1 <- ggplot(newdata, aes(x=reorder(Company_Name, Revenue_2020Q2), y = Revenue_2020Q2, fill=Industry)) +     
 geom_bar(stat = "identity") +
   coord_flip() +  labs(title="2020Q2 Revenue by Company", x="Company", y="Revenue in 2020-Q2 (USD million)") +
   theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+rev1
+
+rev2 <- ggplot(newdata, aes(x=reorder(Company_Name, Revenue_2020Q3), y = Revenue_2020Q3, fill=Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() +  labs(title="2020Q3 Revenue by Company", x="Company", y="Revenue in 2020-Q3 (USD million)") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+rev2
 ```
 
 ## 2. By Revenue Growth
 
 ```{r}
 newdata = sqldf("
-SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Revenue_Growth
+SELECT DISTINCT data2.Industry, data1.Company_Name, data1.Revenue_Growth_Q2, data1.Revenue_Growth_Q3
 FROM data1
 LEFT JOIN data2
 ON data1.Company_Name = data2.Company_Name
@@ -61,8 +68,16 @@ head(newdata)
 ```
 
 ```{r}
-ggplot(newdata, aes(x=reorder(Company_Name, Revenue_Growth), y = Revenue_Growth, fill = Industry)) +     
+gr1 <- ggplot(newdata, aes(x=reorder(Company_Name, Revenue_Growth_Q2), y = Revenue_Growth_Q2, fill = Industry)) +     
 geom_bar(stat = "identity") +
   coord_flip() +  labs(title="2020Q2 Revenue Growth by Company", x="Company", y="Revenue Growth (%)") +
   theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+gr1
+
+gr2 <- ggplot(newdata, aes(x=reorder(Company_Name, Revenue_Growth_Q3), y = Revenue_Growth_Q3, fill = Industry)) +     
+geom_bar(stat = "identity") +
+  coord_flip() +  labs(title="2020Q3 Revenue Growth by Company", x="Company", y="Revenue Growth (%)") +
+  theme(plot.title=element_text(hjust=0.5), axis.title.y = element_blank())
+gr2
 ```
+

@@ -1,4 +1,4 @@
-Jobdata<-read.csv("Job_Data.csv")
+Jobdata<-read.csv("Job_DataSum.csv")
 Joblocation<-read.csv("Job_Locations.csv")
 Companyrating<-read.csv("Company_Rating.csv")
 

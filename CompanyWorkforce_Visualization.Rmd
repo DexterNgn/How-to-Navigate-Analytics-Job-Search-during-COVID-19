@@ -15,7 +15,7 @@ library(ggplot2)
 ## Read the dataset
 ```{r}
 data1 = read.csv("Company_Workforce.csv")
-data2 = read.csv("Job_Data.csv")
+data2 = read.csv("Job_DataSum.csv")
 ```
 
 ```{r}
